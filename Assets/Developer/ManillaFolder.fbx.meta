@@ -59,6 +59,8 @@ ModelImporter:
     7400000: Armature|ArmatureAction
     7400002: Armature|Close
     7400004: Armature|Open
+    7400006: Armature|RestClosed
+    7400008: Armature|RestOpen
     9500000: //RootNode
     13700000: Plane.000
     13700002: Plane.002
