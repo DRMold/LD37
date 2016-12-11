@@ -26,8 +26,8 @@ public class LookAround : MonoBehaviour
 
 		transform.rotation = localRotation;
 
-		Debug.Log ("rotX: " + rotationX + " | rotY: " + rotationY 
-			+" | MouseX: "+Input.GetAxis("Mouse X")+" | MouseY: "+Input.GetAxis("Mouse Y")
-			+" | tf: " + transform.localRotation);
+//		Debug.Log ("rotX: " + rotationX + " | rotY: " + rotationY 
+//			+" | MouseX: "+Input.GetAxis("Mouse X")+" | MouseY: "+Input.GetAxis("Mouse Y")
+//			+" | tf: " + transform.localRotation);
 	}
 }

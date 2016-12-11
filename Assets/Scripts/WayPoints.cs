@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WayPoints : MonoBehaviour 
 {
+	public Animator anim;
 	public Transform[] wayPointList;
 
 	public int currentWayPoint = 0;
@@ -18,10 +19,15 @@ public class WayPoints : MonoBehaviour
 	public bool awaitingDecisionMrPresident = false;
 	public bool decisionMade = false;
 
+	public Issues issue;
+
 	void Start()
 	{
+//		issue = new Issues ();
+		anim   = GetComponent<Animator> ();
 		ogRot  = transform.rotation;
-		finRot = Quaternion.Euler (-45, transform.rotation.x, transform.rotation.z);
+		finRot = Quaternion.Euler (45, transform.rotation.x, transform.rotation.z);
+		warp ();
 	}
 
 	void Update() 
@@ -45,6 +51,7 @@ public class WayPoints : MonoBehaviour
 			}
 		} else if (midDesk && !awaitingDecisionMrPresident) {
 			while (transform.rotation != finRot) {
+				issue.ChangeVisibility (true);
 				transform.rotation = Quaternion.Lerp (
 					transform.rotation,
 					finRot,
@@ -65,8 +72,11 @@ public class WayPoints : MonoBehaviour
 				decisionMade = true;
 				midDesk = false;
 				awaitingDecisionMrPresident = false;
+				issue.RandomIssue ();
+				issue.ChangeVisibility (false);
 			}
 		}
+		setAnim (midDesk, awaitingDecisionMrPresident, decisionMade);
 	}
 
 	private void move() 
@@ -93,5 +103,12 @@ public class WayPoints : MonoBehaviour
 		currentWayPoint = 0;
 		targetWayPoint = wayPointList [currentWayPoint];
 		transform.position = wayPointList[currentWayPoint].position;
+	}
+
+	private void setAnim(bool midDesk, bool awaitingDecisionMrPresident, bool decisionMade) 
+	{
+		anim.SetBool ("midDesk", midDesk);
+		anim.SetBool ("awaitingDecisionMrPresident", awaitingDecisionMrPresident);
+		anim.SetBool ("decisionMade", decisionMade);
 	}
 }
