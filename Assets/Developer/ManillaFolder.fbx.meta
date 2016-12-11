@@ -30,6 +30,9 @@ ModelImporter:
     100044: Plane.021
     100046: Plane.022
     100048: Plane.023
+    100050: Bone.002
+    100052: Bone_end
+    100054: Cube.003
     400000: Armature
     400002: Bone
     400004: Bone.001
@@ -55,14 +58,19 @@ ModelImporter:
     400044: Plane.021
     400046: Plane.022
     400048: Plane.023
+    400050: Bone.002
+    400052: Bone_end
+    400054: Cube.003
     2300000: //RootNode
     2300002: Paperclip.002
     2300004: Paperclip.003
     2300006: Plane.011
+    2300008: Cube.003
     3300000: //RootNode
     3300002: Paperclip.002
     3300004: Paperclip.003
     3300006: Plane.011
+    3300008: Cube.003
     4300000: Plane.002
     4300002: Plane.000
     4300004: Plane.003
@@ -84,6 +92,7 @@ ModelImporter:
     4300036: Plane.017
     4300038: Plane.015
     4300040: Plane.029
+    4300042: Cube.003
     7400000: Armature|ArmatureAction
     7400002: Armature|Close
     7400004: Armature|Open
