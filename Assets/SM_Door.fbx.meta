@@ -1,24 +1,15 @@
 fileFormatVersion: 2
-guid: 9f8f943731b187d489abd70832e2a33e
-timeCreated: 1481365905
+guid: f131fe2797368544cae2424b004c8203
+timeCreated: 1481446235
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Cube
-    100004: DecalCarpet
     400000: //RootNode
-    400002: Cube
-    400004: DecalCarpet
     2300000: //RootNode
-    2300002: Cube
-    2300004: DecalCarpet
     3300000: //RootNode
-    3300002: Cube
-    3300004: DecalCarpet
-    4300000: Cube
-    4300002: DecalCarpet
+    4300000: Cube.003
   materials:
     importMaterials: 1
     materialName: 0

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 35d3266ad6e63544590304a9856b92ed
-timeCreated: 1481415723
+guid: 3d17eb293c575c2429cc771800910855
+timeCreated: 1481445176
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Paperclip
+    4300000: Circle.002
   materials:
     importMaterials: 1
     materialName: 0
