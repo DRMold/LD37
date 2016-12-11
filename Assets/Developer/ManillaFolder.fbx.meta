@@ -111,6 +111,9 @@ ModelImporter:
     7400030: Armature|AnimOpen
     7400032: Armature|Armature|Armature|RestOpen|Armature|RestOpen.001
     7400034: Armature|RestClose
+    7400036: Plane.018|AnimOpen
+    7400038: Plane.018|Armature|Armature|Close|Armature|Close
+    7400040: Plane.018|Open
     9500000: //RootNode
     13700000: Plane.000
     13700002: Plane.002
