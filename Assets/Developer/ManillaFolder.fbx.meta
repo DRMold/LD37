@@ -21,6 +21,18 @@ ModelImporter:
     100026: Plane.008
     100028: Plane.011
     100030: Plane.013
+    100032: Plane.016
+    100034: Plane.015
+    100036: Plane.017
+    100038: Plane.018
+    100040: Plane.019
+    100042: Plane.020
+    100044: Plane.021
+    100046: Plane.022
+    100048: Plane.023
+    100050: Bone.002
+    100052: Bone_end
+    100054: Cube.003
     400000: Armature
     400002: Bone
     400004: Bone.001
@@ -37,14 +49,28 @@ ModelImporter:
     400026: Plane.008
     400028: Plane.011
     400030: Plane.013
+    400032: Plane.016
+    400034: Plane.015
+    400036: Plane.017
+    400038: Plane.018
+    400040: Plane.019
+    400042: Plane.020
+    400044: Plane.021
+    400046: Plane.022
+    400048: Plane.023
+    400050: Bone.002
+    400052: Bone_end
+    400054: Cube.003
     2300000: //RootNode
     2300002: Paperclip.002
     2300004: Paperclip.003
     2300006: Plane.011
+    2300008: Cube.003
     3300000: //RootNode
     3300002: Paperclip.002
     3300004: Paperclip.003
     3300006: Plane.011
+    3300008: Cube.003
     4300000: Plane.002
     4300002: Plane.000
     4300004: Plane.003
@@ -56,9 +82,38 @@ ModelImporter:
     4300016: Paperclip.003
     4300018: Plane.008
     4300020: Plane.013
+    4300022: Plane.016
+    4300024: Plane.023
+    4300026: Plane.022
+    4300028: Plane.021
+    4300030: Plane.020
+    4300032: Plane.019
+    4300034: Plane.018
+    4300036: Plane.017
+    4300038: Plane.015
+    4300040: Plane.029
+    4300042: Cube.003
     7400000: Armature|ArmatureAction
     7400002: Armature|Close
     7400004: Armature|Open
+    7400006: Armature|RestClosed
+    7400008: Armature|RestOpen
+    7400010: Armature|Armature|Armature|ArmatureAction|Armature|ArmatureAction
+    7400012: Armature|Armature|Armature|Close|Armature|Close
+    7400014: Armature|Armature|Armature|Open|Armature|Open
+    7400016: Armature|Armature|Armature|RestClosed|Armature|RestClosed
+    7400018: Armature|Armature|Armature|RestOpen|Armature|RestOpen
+    7400020: Armature|RestOpen.001
+    7400022: Armature|RestOpen.002
+    7400024: Armature|RestOpen.004
+    7400026: Armature|RestOpen.005
+    7400028: Armature|AnimClose
+    7400030: Armature|AnimOpen
+    7400032: Armature|Armature|Armature|RestOpen|Armature|RestOpen.001
+    7400034: Armature|RestClose
+    7400036: Plane.018|AnimOpen
+    7400038: Plane.018|Armature|Armature|Close|Armature|Close
+    7400040: Plane.018|Open
     9500000: //RootNode
     13700000: Plane.000
     13700002: Plane.002
@@ -68,6 +123,15 @@ ModelImporter:
     13700010: Plane.010
     13700012: Plane.008
     13700014: Plane.013
+    13700016: Plane.016
+    13700018: Plane.015
+    13700020: Plane.017
+    13700022: Plane.018
+    13700024: Plane.019
+    13700026: Plane.020
+    13700028: Plane.021
+    13700030: Plane.022
+    13700032: Plane.023
   materials:
     importMaterials: 1
     materialName: 0

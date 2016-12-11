@@ -6,10 +6,24 @@ ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Cube
+    100004: DecalCarpet
+    100006: Circle
     400000: //RootNode
+    400002: Cube
+    400004: DecalCarpet
+    400006: Circle
     2300000: //RootNode
+    2300002: Cube
+    2300004: DecalCarpet
+    2300006: Circle
     3300000: //RootNode
+    3300002: Cube
+    3300004: DecalCarpet
+    3300006: Circle
     4300000: Cube
+    4300002: DecalCarpet
+    4300004: Circle
   materials:
     importMaterials: 1
     materialName: 0
