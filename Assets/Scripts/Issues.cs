@@ -6,36 +6,48 @@ using UnityEngine;
 public class Issues : MonoBehaviour 
 {
 	Dictionary<string, Choices> issues = new Dictionary<string, Choices>();
-	public GameObject go;
-	public TextMesh txt;
-	public MeshRenderer me;
+	public TextMesh issueTxt;
+	public MeshRenderer issueMe;
+
+	public TextMesh choice1Txt;
+	public MeshRenderer choice1Me;
+
+	public TextMesh choice2Txt;
+	public MeshRenderer choice2Me;
 
 	void Start()
+	{
+		InitializeIssues ();
+	}
+
+	public void RandomIssue()
+	{
+		string key = issues.ElementAt (Random.Range (0, issues.Count - 1)).Key;
+		issueTxt.text = key;
+		choice1Txt.text = issues [key].option1.response;
+		choice2Txt.text = issues [key].option2.response;
+
+	}
+
+	public void ChangeVisibility(bool visibility)
+	{
+		issueMe.enabled = visibility;
+		choice1Me.enabled = visibility;
+		choice2Me.enabled = visibility;
+	}
+
+	private void InitializeIssues() 
 	{
 		issues.Add ("Issue 1", new Choices ("Choice 1", "Result 1", "Choice 2", "Result 2"));
 		issues.Add ("Issue 2", new Choices ("Choice 1", "Result 1", "Choice 2", "Result 2"));
 		issues.Add ("Issue 3", new Choices ("Choice 1", "Result 1", "Choice 2", "Result 2"));
 		issues.Add ("Issue 4", new Choices ("Choice 1", "Result 1", "Choice 2", "Result 2"));
-		issues.Add ("Issue 5", new Choices("Choice 1", "Result 1", "Choice 2", "Result 2"));
-		issues.Add ("Issue 6", new Choices("Choice 1", "Result 1", "Choice 2", "Result 2"));
-		issues.Add ("Issue 7", new Choices("Choice 1", "Result 1", "Choice 2", "Result 2"));
-		issues.Add ("Issue 8", new Choices("Choice 1", "Result 1", "Choice 2", "Result 2"));
-		issues.Add ("Issue 9", new Choices("Choice 1", "Result 1", "Choice 2", "Result 2"));
+		issues.Add ("Issue 5", new Choices ("Choice 1", "Result 1", "Choice 2", "Result 2"));
+		issues.Add ("Issue 6", new Choices ("Choice 1", "Result 1", "Choice 2", "Result 2"));
+		issues.Add ("Issue 7", new Choices ("Choice 1", "Result 1", "Choice 2", "Result 2"));
+		issues.Add ("Issue 8", new Choices ("Choice 1", "Result 1", "Choice 2", "Result 2"));
+		issues.Add ("Issue 9", new Choices ("Choice 1", "Result 1", "Choice 2", "Result 2"));
 		issues.Add ("Issue 10", new Choices("Choice 1", "Result 1", "Choice 2", "Result 2"));
-
-		me = go.GetComponent<MeshRenderer> ();
-//		go = GameObject.FindGameObjectWithTag ("Issues");
-//		txt = go.GetComponent<TextMesh> ();
-	}
-
-	public void RandomIssue()
-	{
-		txt.text = issues.ElementAt(Random.Range (0, issues.Count-1)).Key;
-	}
-
-	public void ChangeVisibility(bool visibility)
-	{
-		me.enabled = visibility;
 	}
 }
 
